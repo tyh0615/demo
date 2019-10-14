@@ -1,7 +1,4 @@
 
 Dawn
-
 other
-
-
-Lorem ipsum dolor sit amet11111111111
+Lorem ipsum dolor sit amet
