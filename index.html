@@ -1,15 +1,81 @@
-
-
-
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+  <meta name="referrer" content="never" />
+  <title>Dawn quark</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css?v=1.50.15991" />
+  <link rel="stylesheet" id="nightCss" type="text/css" href="css/night.css?v=1.50.15991" disabled />
 </head>
+
 <body>
-  十姑嗣的上第事得失赠了，将价生落脱上一未你派道沾十家制，李本出和放仍了国是皮，开挟为有分而，韩之所负负对要云，的廿而韩中兄颜，作是种笔孔迷李人老受失生沉为张德，司保连仓金之失了，生使后诗自令但我里考让着司两灰不陛有，县老预变者了见，便才卅快知远力领，落其。
+  <div id="app">
+    <div class="page-home">
+      <div class="logo"></div>
+      <div class="ornament-input-group" style="display: none;"></div>
+      <div class="bookmark"></div>
+    </div>
+    <div class="page-search">
+      <div class="history">
+        <div class="emptyHistory"></div>
+        <ul class="content"></ul>
+      </div>
+      <ul class="suggestion"></ul>
+      <div class="bottom-row">
+        <div class="search-from">
+          <div class="input-bg">
+            <input type="text" class="search-input" placeholder="搜索或输入网址" />
+            <div class="empty-input"></div>
+            <div class="search-btn">取消</div>
+          </div>
+        </div>
+        <div class="shortcut">
+          <div class="content">
+            <ul class="shortcut1">
+              <li>www.</li>
+              <li>m.</li>
+              <li>wap.</li>
+              <li>.org</li>
+            </ul>
+            <ul class="shortcut2">
+              <li>.</li>
+              <li>/</li>
+              <li>.cn</li>
+              <li>.com</li>
+              <li>.org</li>
+            </ul>
+            <ul class="shortcut3">
+              <li>快搜:</li>
+              <li>百科</li>
+              <li>视频</li>
+              <li>豆瓣</li>
+              <li>微博</li>
+              <li>知乎</li>
+              <li>小说</li>
+              <li>新闻</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <input type="text" class="s-temp" />
+  </div>
+  <script>
+    var app = window.app || {};
+    app.version = "1.50.15991";
+  </script>
+  <script src="js/lib/require.js?v=1.50.15991"></script>
+  <script src="js/main.js?v=1.50.15991"></script>
+  <script>
+    if (location.protocol == "https:" && navigator.serviceWorker) {
+      navigator.serviceWorker.register('sw.js');
+    }
+  </script>
+  <!-- 不重要的CSS最后加载 -->
+  <link rel="stylesheet" type="text/css" href="css/lazy.css?v=1.50.15991" />
 </body>
+
 </html>
+
